@@ -23,6 +23,7 @@ feh - even more simple but powerfull graphics view
 mpg123 - audio converter, pre-installed on most Linux Distro's (installed by Mycroft also)
 bash shell - pre-installed
 zenity - GUI for shell commands
+mplayer - for media files like radio streams
 
 How to install
 
@@ -53,7 +54,17 @@ say: "switch to nightrider" - will switch to the nightrider theme
 
 say: "show commands" - will show these commands
 
+say: "play radio" - will play radio stream of KISS FM Ukraine, uses mplayer
+set your own favorite channel https://www.xatworld.com/radio-search/
+
+say: "stop radio" - will stop radio stream
+
 
 Thats it! Hope you enjoy!
+
+
+UPDATE: 12/19/2019
+-Fixed some enoying bugs
+-Added Radio
 
 Bastiaan
