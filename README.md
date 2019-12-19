@@ -42,11 +42,17 @@ this log file is automatically activated when starting with: mycroft-start all
 ===New commands===
 
 say: "exit interface" - will go back to the main menu
+
 say: "switch to jarvis small" - will switch to the J.A.R.V.I.S windowed theme
+
 say: "switch to jarvis full" - will switch to the J.A.R.V.I.S fullscreen theme
+
 say: "switch to star trek"  - will switch to the STAR TREK theme
+
 say: "switch to nightrider" - will switch to the nightrider theme
+
 say: "show commands" - will show these commands
+
 
 Thats it! Hope you enjoy!
 
