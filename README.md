@@ -11,13 +11,12 @@ Mint Linux and MyCroft
 
 It is nowhere professional or ment to be professional. 
 
-I hope you wenjoy it, if not though luck :)
+I hope you will enjoy it, if not though luck :)
 --------------------------------------------------------------------
 
-Please read carefully otherwise it might be one
-big disapointment.
+Please read carefully otherwise it might be one big disapointment.
 
-What programs do you need to run MyCroft Interface Linux:
+What external programs do you need to run MyCroft Interface Linux?
 
 pqiv - simple graphics viewer
 feh - even more simple but powerfull graphics view
