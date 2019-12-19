@@ -64,7 +64,7 @@ Thats it! Hope you enjoy!
 
 
 UPDATE: 12/19/2019
-Fixed some enoying bugs 
+Fixed some enoying bugs
 Added Radio
 
 Bastiaan
