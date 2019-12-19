@@ -54,10 +54,10 @@ say: "switch to nightrider" - will switch to the nightrider theme
 
 say: "show commands" - will show these commands
 
-say: "play radio" - will play radio stream of KISS FM Ukraine, uses mplayer
+say: "stream radio" - will play radio stream of KISS FM Ukraine, uses mplayer
 set your own favorite channel https://www.xatworld.com/radio-search/
 
-say: "stop radio" - will stop radio stream
+say: "stop streaming radio" - will stop radio stream
 
 
 Thats it! Hope you enjoy!
