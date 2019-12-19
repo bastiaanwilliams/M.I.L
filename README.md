@@ -4,9 +4,19 @@ program, script, to display a graphical interface
 for MyCroft Open Source AI.
 For more information about MyCroft go to https://mycroft.ai
 
-I wrote this script and made some graphics, some from internet
-some i made myself, to use it on a laptop on which running 
-Mint Linux and MyCroft
+I wrote this script and made some graphics, some from internet,
+some i made myself. If anybody has a problem with a graphics file
+i use, please let me know so i can remove and replace it.
+The script presents a graphical interface to MyCroft. If Mycroft
+speaks it will show a graphical representation of that.
+
+It currently has 4 themes.
+
+J.A.R.V.I.S - fullscreen or windowed
+STAR TREK   - LCARS interface
+K.I.T.T     - NightRider black/clean
+NONE        - Headless mode, usefull to exercise your pronoucing
+
 
 It is nowhere professional or ment to be professional. 
 
