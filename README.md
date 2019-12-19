@@ -13,9 +13,13 @@ speaks it will show a graphical representation of that.
 It currently has 4 themes.
 
 J.A.R.V.I.S - fullscreen or windowed
+
 STAR TREK   - LCARS interface
+
 K.I.T.T     - NightRider black/clean
+
 NONE        - Headless mode, usefull to exercise your pronoucing
+
 
 
 It is nowhere professional or ment to be professional. 
