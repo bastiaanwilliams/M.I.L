@@ -34,7 +34,7 @@ open a terminal, xterm, gnome-terminal etc
 
 cd $HOME/mycroft_interface_linux
 
-./mycroft_visal.sh or bash mycroft_visal.sh
+./mycroft_visal.sh or bash mycroft_visal.sh 
 
 This program uses the file: /var/log/mycroft/voice.log to function properly
 this log file is automatically activated when starting with: mycroft-start all
