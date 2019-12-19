@@ -68,5 +68,6 @@ UPDATE: 12/19/2019
 - Fixed some enoying bugs
 
 - Added Radio
+- Added headless mode, usefull to exercise your pronoucing
 
 Bastiaan
