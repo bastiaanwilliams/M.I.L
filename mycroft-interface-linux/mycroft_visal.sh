@@ -12,13 +12,12 @@
 ##############################################
 #
 #
+notify=0
 cd $HOME/mycroft-interface-linux/
 # kill all instances of feh,pqiv,mpg123
 pkill -f pqiv
 pkill -f feh
 pkill -f mpg123 
-
-
 # menus
 # catch last spoken words to send to notify area
 catchwords() {
@@ -30,7 +29,7 @@ last=`tail -1 /var/log/mycroft/voice.log | grep Utterance | cut -c90-| tr -d '"]
 notify-send "Jarvis: $last"
 fi
 else
-notify = 0;
+notify=0;
 fi
 }
 
@@ -155,6 +154,8 @@ startrek=1
 jarvismall=0
 jarvisfull=0
 kitt=0
+ani1=images/tenor.gif
+ani2=images/stlogo.gif
 date="CREW MEMBER: `whoami`";
 mycroft=`tail -6 /var/log/mycroft/voice.log | grep "hey jarvis" | wc -l`
 expr mycroft
@@ -288,13 +289,12 @@ kill -9 $processIDA
               
 
 switchinterface() {
-
 command=`tail -1 /var/log/mycroft/voice.log | grep "show commands" | wc -l`
 if [ $command -eq 1 ] ; then
 pkill -f mpg123
 ((command+=1))
-echo "COMMANDS SHOWED" >> /var/log/mycroft/voices.log
-
+#echo "COMMANDS SHOWED" >> /var/log/mycroft/voices.log
+mycroft-speak " Showing commands "&
 zenity --info --width 500 --text="
 ========= MyCroft Interface Linux Commands ==========
 
@@ -331,8 +331,8 @@ else
 mycroft="Computer is listing..."
 fi
 date="CREW MEMBER: `whoami`";
-convert -font helvetica -pointsize 34 -fill white -draw "text 1245,190 '$date' " startrek_bg.jpg startrek_bgnew.jpg
-convert -font helvetica -pointsize 16 -fill white -draw "text 840,690 '$mycroft' " startrek_bgnew.jpg startrek_bgnew.jpg   
+convert -font helvetica -pointsize 34 -fill white -draw "text 1245,190 '$date' " images/startrek_bg.jpg startrek_bgnew.jpg
+convert -font helvetica -pointsize 16 -fill white -draw "text 840,690 '$mycroft' " images/startrek_bgnew.jpg startrek_bgnew.jpg   
 fi
 # detect jarvis_small
 mycroft=`tail -1 /var/log/mycroft/voice.log | grep "switch to jarvis small" | wc -l`
@@ -381,7 +381,7 @@ exitinterface() {
 mycroft=`tail -1 /var/log/mycroft/voice.log | grep "exit interface" | wc -l`
 expr $mycroft
 if [ $mycroft -gt 0 ];then
-
+mycroft-speak " Goodbye"
 pkill -f mpg123
 pkill -f  pqiv
 pkill -f  feh
@@ -422,14 +422,10 @@ jarvissmall
 #STARTREK
 elif [  "$choice" = "STAR-TREK" ] ;then
                echo "Starting STAR-TREK interface.."
-ani1=tenor.gif
-ani2=stlogo.gif #LCARS.gif
 startrek
 #KITT
 elif [ "$choice" = "K.I.T.T" ] ;then
                          echo "Starting K.I.T.T interface.."
-ani1=fast.gif
-ani2=night.gif
 kitt 
 else
 pkill -f  feh
