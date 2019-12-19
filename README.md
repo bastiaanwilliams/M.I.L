@@ -1,5 +1,4 @@
 # M.I.L
-Mycroft Interface Linux
 MyCroft Interface Linux is a very simple
 program, script, to display a graphical interface 
 for MyCroft Open Source AI.
