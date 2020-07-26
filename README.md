@@ -10,15 +10,12 @@ i use, please let me know so i can remove and replace it.
 The script presents a graphical interface to MyCroft. If Mycroft
 speaks it will show a graphical representation of that.
 
-It currently has 4 themes.
+It currently has 4 themes:
 
-J.A.R.V.I.S - fullscreen or windowed
-
-STAR TREK   - LCARS interface
-
-K.I.T.T     - NightRider black/clean
-
-NONE        - Headless mode, usefull to exercise your pronoucing
+* J.A.R.V.I.S - fullscreen or windowed
+* STAR TREK   - LCARS interface
+* K.I.T.T     - NightRider black/clean
+* NONE        - Headless mode, usefull to exercise your pronoucing
 
 
 
@@ -27,33 +24,39 @@ It is nowhere professional or ment to be professional.
 I hope you will enjoy it, if not though luck :)
 --------------------------------------------------------------------
 
+# Installation
+
 Please read carefully otherwise it might be one big disapointment.
+
+## Requirements
 
 What external programs do you need to run MyCroft Interface Linux?
 
-pqiv - simple graphics viewer
-feh - even more simple but powerfull graphics view
-mpg123 - audio converter, pre-installed on most Linux Distro's (installed by Mycroft also)
-bash shell - pre-installed
-zenity - GUI for shell commands
-mplayer - for media files like radio streams
+* pqiv - simple graphics viewer
+* feh - even more simple but powerfull graphics view
+* mpg123 - audio converter, pre-installed on most Linux Distro's (installed by Mycroft also)
+* bash shell - pre-installed
+* zenity - GUI for shell commands
+* mplayer - for media files like radio streams
 
-How to install
+## How to install
 
-make a folder $HOME/mycroft_interface_linux
+1. make a folder $HOME/mycroft_interface_linux
 
-unzip all the files into the folder $HOME/mycroft_interface_linux
+2. unzip all the files into the folder $HOME/mycroft_interface_linux
 
-open a terminal, xterm, gnome-terminal etc
+3. open a terminal, xterm, gnome-terminal etc
 
-cd $HOME/mycroft_interface_linux
+4. `cd $HOME/mycroft_interface_linux`
 
-./mycroft_visal.sh or bash mycroft_visal.sh 
+5. `./mycroft_visal.sh or bash mycroft_visal.sh `
 
-This program uses the file: /var/log/mycroft/voice.log to function properly
+This program uses the file: `/var/log/mycroft/voice.log` to function properly
 this log file is automatically activated when starting with: mycroft-start all
 
-===New commands===
+# Usage
+
+## New commands
 
 say: "exit interface" - will go back to the main menu
 
@@ -75,11 +78,11 @@ say: "stop streaming radio" - will stop radio stream
 
 Thats it! Hope you enjoy!
 
+# Changelog
 
 UPDATE: 12/19/2019
 
 - Fixed some enoying bugs
-
 - Added Radio
 - Added headless mode, usefull to exercise your pronoucing
 
